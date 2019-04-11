@@ -1,0 +1,15 @@
+{
+  "files.exclude": {
+    "**/*.pyc": true,
+    "**/node_modules": true,
+    "node_modules": true,
+    "**/_pycache__": true,
+    "_pycache__": true
+  },
+  "editor.tabSize": 2,
+  "python.linting.lintOnSave": true,
+  "workbench.tree.indent": 15,
+  "python.formatting.provider": "yapf",
+  "python.formatting.yapfArgs": ["--style", "{based_on_style: pep8, indent_width: 2}"],
+  "python.pythonPath": "/home/huongnhd/virtualenv/jobseeenv/bin/python"
+}
