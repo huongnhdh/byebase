@@ -1,2 +1,3 @@
-elasticsearch
-pyyaml
+elasticsearch # for connect elasticsearch 
+pyyaml #for reading yaml
+pika # for connect rabitmq

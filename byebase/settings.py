@@ -10,8 +10,8 @@ ELASTICSEARCH = {
     # 'http_auth': ('', '********'),
     'port': 9200
 }
-# link for dev
-# AMQPURL = 'amqp://cfpzarme:MqsdI8OBcuTy_C1C1JP1B2a8APAWQzf1@mustang.rmq.cloudamqp.com/cfpzarme'
+# link for monitor amqp: https://eagle.rmq.cloudamqp.com/#/connections
+# AMQPURL = 'amqp://sbeftlyb:b7aSqyzBjHmZo-H5s8G7mM1bW8u55e0V@eagle.rmq.cloudamqp.com/sbeftlyb'
 AMQPURL = 'amqp://guest:guest@localhost:5672/%2F'
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
