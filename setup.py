@@ -8,10 +8,10 @@ from os import path
 here = path.abspath(path.dirname(__file__))
 
 with open(path.join(here, 'readme.md'), encoding='utf-8') as f:
-  long_description = f.read()
+    long_description = f.read()
 
 with open(path.join(here, 'requirements.txt'), encoding='utf-8') as f:
-  install_requires = f.read(),
+    install_requires = f.read(),
 
 setup(
     name='byebase',
@@ -50,7 +50,7 @@ setup(
     install_requires=install_requires,
 
     extras_require={
-        'dev': ['pep8', 'yapf'],
+        'dev': ['pep8', 'pylint', 'yapf', 'pydocstyle'],
         'test': ['coverage'],
     },
 

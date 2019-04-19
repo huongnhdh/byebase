@@ -6,6 +6,4 @@ Create by: @huongnhd
 
 
 class AMQPNotification:
-  """
-   Define notification with AMQP
-   """
+  """Define notification with AMQP"""

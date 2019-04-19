@@ -1,0 +1,1 @@
+from byebase.decorators.suppress_errors import suppress_errors
