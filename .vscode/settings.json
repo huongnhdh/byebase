@@ -23,6 +23,7 @@
     "--errors-only"
   ],
   "cSpell.words": [
+    "AMQP",
     "byebase",
     "getenv",
     "huongnhdh",

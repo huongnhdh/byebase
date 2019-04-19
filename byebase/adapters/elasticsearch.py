@@ -24,16 +24,12 @@ class ElasticSearch(Elasticsearch):
   @suppress_errors
   def setup_connection(connection):
     """Set up connection """
-    els_conn = Elasticsearch(connection['host_name'],
-                             http_auth=connection['http_auth'],
-                             port=connection['port'])
-    try:
-      els_conn.ping()
-    except BaseException:
-      logger.error('Elasticsearch can not connecting to' %
-                   connection['host_name'])
-      raise ValueError('CAN_NOT_CONNECT to %s' % connection['host_name'])
-    return els_conn
+    conn = Elasticsearch(
+        connection['host_name'],
+        #  http_auth=connection['http_auth'],
+        port=connection['port'])
+    els_conn.ping()
+    return conn
 
   def parallel_bulk(self, bulk_data):
     """
