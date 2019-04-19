@@ -3,18 +3,20 @@
 """
 Create by: @huongnhd
 """
+import logging
 from elasticsearch import Elasticsearch
 from elasticsearch.helpers import parallel_bulk
-from settings import ELASTICSEARCH
-import logging
+from byebase.settings import ELASTICSEARCH
+
+# end import
+
 logger = logging.getLogger(__name__)
 
 
 class ElasticSearch(Elasticsearch):
   """
-    Adapter for ElasticSearch api
-
-    """
+  Adapter for ElasticSearch client
+  """
 
   def __init__(self):
 

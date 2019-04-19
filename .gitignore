@@ -2,3 +2,5 @@
 **.pyc
 **/__pycache__/**
 byebase.egg-info/
+dist
+build
